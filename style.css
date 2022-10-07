@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+  background: #DDD2BE;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin: 0px;
+}
+
+.widget-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 200px;
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #7E574E;
+}
+
+.add {
+  display: flex;
+}
+
+.new {
+  box-sizing:content-box;
+  width: 306px;
+  border: 1px solid grey;
+  padding: 10px;
+  background-color: #E9C69D;
+  font-family: 'Inter';
+  font-size: x-large;
+}
+
+.new:hover{
+outline: none;
+border-color: aqua;}
+
+.btn {
+  box-sizing: content-box;
+  border: 1px solid grey;
+  padding: 10px;
+  padding-right: 20px;
+  border-left: 0ch;
+  background-color: #C5AD81;
+  font-size: x-large;
+  font-family: 'Inter';
+}
+
+.done {
+  text-align: center;
+  border: 1px solid grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 403px;
+  background-color: #A9C991;
+  font-family: 'Inter';
+  font-size: x-large;
+}
+
+.list {
+  display: flex;
+}
+
+#task-box {
+  padding: 0%;
+  border: 1px solid grey;
+  height: 407px;
+  width: 403px;
+  background-color: #D1B5AE;
+  margin-top: 20px;
+}
+
+#doneBox {
+  border: 1px solid grey;
+  height: 407px;
+  width: 403px;
+  background-color: #BCD7A6;
+  margin-top: 20px;
+  padding: 0%;
+}
+
+li {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+  align-items: baseline;
+  /* white-space: nowrap; Текст не переносится 
+  overflow: hidden;
+  text-overflow: ellipsis; Добавляем многоточие */
+}
+
+.act-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  height: 20px;
+  gap: 3px;
+}
+
+.check {
+  width: 22px;
+  height: 20px;
+  background: url("check.svg") no-repeat center;
+  border: none;
+}
+
+.cancel {
+  width: 22px;
+  height: 20px;
+  background: url("cancel.svg") no-repeat center;
+  border: none;
+}
+
