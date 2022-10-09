@@ -86,7 +86,8 @@ border-color: aqua;}
   width: 403px;
   background-color: #D1B5AE;
   margin-top: 20px;
-  overflow: hidden;
+  overflow: auto;
+  overflow-y: scroll;
   
 }
 
@@ -97,6 +98,7 @@ border-color: aqua;}
   width: 403px;
   background-color: #BCD7A6;
   margin-top: 20px;
+  overflow-y: scroll;
 }
 
 li {
