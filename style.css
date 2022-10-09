@@ -41,7 +41,7 @@ h2 {
 
 .new {
   box-sizing:content-box;
-  width: 306px;
+  width: 346px;
   border: 1px solid grey;
   padding: 10px;
   background-color: #E9C69D;
@@ -69,7 +69,7 @@ border-color: aqua;}
   border: 1px solid grey;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 403px;
+  width: 443px;
   background-color: #A9C991;
   font-family: 'Inter';
   font-size: x-large;
@@ -80,21 +80,23 @@ border-color: aqua;}
 }
 
 #task-box {
-  padding: 0%;
+  padding: 10px 20px;
   border: 1px solid grey;
   height: 407px;
   width: 403px;
   background-color: #D1B5AE;
   margin-top: 20px;
+  overflow: hidden;
+  
 }
 
 #doneBox {
+  padding: 10px 20px;
   border: 1px solid grey;
   height: 407px;
   width: 403px;
   background-color: #BCD7A6;
   margin-top: 20px;
-  padding: 0%;
 }
 
 li {
@@ -103,11 +105,17 @@ li {
   font-size: 30px;
   display: flex;
   justify-content: space-between;
-  width: 340px;
   align-items: baseline;
-  /* white-space: nowrap; Текст не переносится 
-  overflow: hidden;
-  text-overflow: ellipsis; Добавляем многоточие */
+}
+
+ul {
+  padding: 0%;
+}
+
+div {
+  white-space: normal;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
 }
 
 .act-container {
