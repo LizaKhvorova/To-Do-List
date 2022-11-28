@@ -1,0 +1,29 @@
+.input-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.new {
+  box-sizing:content-box;
+  width: 346px;
+  border: 1px solid grey;
+  padding: 10px;
+  background-color: #E9C69D;
+  font-family: 'Inter';
+  font-size: x-large;
+}
+
+.new:hover{
+outline: none;
+border-color: aqua;}
+
+.btn {
+  box-sizing: content-box;
+  border: 1px solid grey;
+  padding: 10px;
+  padding-right: 20px;
+  border-left: 0ch;
+  background-color: #C5AD81;
+  font-size: x-large;
+  font-family: 'Inter';
+}

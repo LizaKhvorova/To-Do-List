@@ -1,0 +1,15 @@
+#task-box {
+  padding: 10px 20px;
+  border: 1px solid grey;
+  height: 407px;
+  width: 403px;
+  background-color: #D1B5AE;
+  margin-top: 20px;
+  overflow: auto;
+  overflow-y: scroll;
+  
+}
+
+ul {
+  padding: 0%;
+}
