@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { WellDoneItem } from '../WellDoneItem/WellDoneItem';
 import './style.css';
+import { AppContext } from '../context/AppContext';
 
-export function WellDoneBox({doneTodo, removeTodo}) {
+export function WellDoneBox() {
+  const {doneTodo} = useContext(AppContext);
   return(
     <>
       <h2 className="done">Well done!</h2>
@@ -12,7 +14,6 @@ export function WellDoneBox({doneTodo, removeTodo}) {
             key={item.id}
             value={item.value}
             id={item.id}
-            removeTodo={() => removeTodo(item.id)}
           />
         ))}
       </ul>

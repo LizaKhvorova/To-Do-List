@@ -9,7 +9,6 @@ export function Input({addTodo}) {
     setInputValue('');
   }
 
-
   return(
     <div className="input-container">
       <input 

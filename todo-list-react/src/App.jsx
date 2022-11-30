@@ -3,6 +3,7 @@ import './App.css';
 import { Input } from './components/Input/Input';
 import { TaskBox } from './components/TaskBox/TaskBox';
 import { WellDoneBox } from './components/WellDoneBox/WellDoneBox';
+import { AppContext } from './components/context/AppContext';
 
 function App() {
   const [todo, setTodo] = useState([{id: 1, value: "Hello"}, {id: 2, value: "Hey"}]);
@@ -26,27 +27,30 @@ function App() {
     handleRemoveTodo(id);
   }
 
+  const value = {
+    todo: todo, 
+    doneTodo: doneTodo,
+    removeTodo: handleRemoveTodo,
+    checkTodo: handleAddDoneTodo, 
+    removeDoneTodo: handleRemoveDoneTodo
+  }
+  
   return (
     <>
-      <h1>To Do list</h1>
-      <div className="widget-container">
-      <div className="widget">
-        <Input
-          addTodo={handleAddTodo}
-        />
-        <TaskBox
-          todo={todo}
-          removeTodo={handleRemoveTodo}
-          checkTodo={handleAddDoneTodo}
-        />
-      </div>
-      <div className="widget">
-        <WellDoneBox
-          doneTodo={doneTodo}
-          removeTodo={handleRemoveDoneTodo}
-        />
-      </div>
-      </div>
+      <AppContext.Provider value={value}>
+        <h1>To Do list</h1>
+        <div className="widget-container">
+          <div className="widget">
+            <Input
+              addTodo={handleAddTodo}
+            />
+            <TaskBox/>
+          </div>
+          <div className="widget">
+            <WellDoneBox/>
+          </div>
+        </div>
+      </AppContext.Provider>
     </>
   );
 }
