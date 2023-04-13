@@ -1,0 +1,21 @@
+#deleted-box {
+  padding: 10px 20px;
+  border: 1px solid grey;
+  height: 407px;
+  background-color: rgb(255 157 157 / 46%);
+  margin-top: 20px;
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+.deleted {
+  text-align: center;
+  border: 1px solid grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 443px;
+  background-color: rgb(255 157 157 / 46%);
+  font-family: 'Inter';
+  font-size: x-large;
+  margin: 0;
+}

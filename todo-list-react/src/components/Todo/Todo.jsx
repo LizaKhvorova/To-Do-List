@@ -1,24 +1,24 @@
 import React from 'react';
 import './style.css';
 
-export function Todo({value, removeTodo, checkTodo}) {
-  return(
+export function Todo({ value, removeTodo, checkTodo }) {
+  return (
     <li>
       <div>
-        {value}
+        <label>{value}</label>
       </div>
       <div className='act-container'>
-        <button 
-          className='check' 
+        <button
+          className='check'
           alt='check'
           onClick={checkTodo}
         />
-        <button 
-          className='cancel' 
+        <button
+          className='cancel'
           alt='cancel'
           onClick={removeTodo}
         />
-      </div> 
-    </li>  
+      </div>
+    </li>
   )
 }

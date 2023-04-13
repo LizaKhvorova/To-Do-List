@@ -1,0 +1,39 @@
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+ 
+}
+
+.btn-app {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #DDD2BE;
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  font-weight: 400;
+}
+
+.btn-app:hover {
+  background: rgba(243, 243, 243, 0.543);
+	color: grey;
+	box-shadow: inset 0 0 0 3px #d7ad64e9;
+}
+
+
+.btn-app-selected {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #DDD2BE;
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  font-weight: 400;
+  background: rgba(229, 198, 198, 0.543);
+  box-shadow: inset 0 0 0 3px #d7ad64e9;
+}

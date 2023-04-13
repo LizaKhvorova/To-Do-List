@@ -7,6 +7,39 @@ li {
   align-items: baseline;
 }
 
+/* .input-check {
+  margin-right: 20px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.input-check+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.input-check+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #598cbe;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.input-check:checked+label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url('../../svg/checkbox.svg')
+} */
+
 .act-container {
   display: flex;
   flex-direction: row;
@@ -18,13 +51,13 @@ li {
 .check {
   width: 22px;
   height: 20px;
-  background: url("check.svg") no-repeat center;
+  background: url("../../svg/check.svg") no-repeat center;
   border: none;
 }
 
 .cancel {
   width: 22px;
   height: 20px;
-  background: url("cancel.svg") no-repeat center;
+  background: url("../../svg/cancel.svg") no-repeat center;
   border: none;
 }
