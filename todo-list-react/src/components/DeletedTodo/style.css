@@ -1,0 +1,9 @@
+li {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+

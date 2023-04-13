@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+  background: #DDD2BE;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(126, 87, 78);
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+}
+
+.widget-container {
+  display: flex;
+  justify-content: center;
+  /* margin: 0 200px; */
+}

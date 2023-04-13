@@ -1,0 +1,25 @@
+.widget {
+  display: flex;
+  flex-direction: column;
+}
+
+.done {
+  text-align: center;
+  border: 1px solid grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #A9C991;
+  font-family: 'Inter';
+  font-size: x-large;
+  margin: 0;
+}
+
+#doneBox {
+  padding: 10px 20px;
+  border: 1px solid grey;
+  height: 407px;
+  width: 403px;
+  background-color: #BCD7A6;
+  margin-top: 20px;
+  overflow-y: scroll;
+}
