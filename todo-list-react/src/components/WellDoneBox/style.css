@@ -18,8 +18,11 @@
   padding: 10px 20px;
   border: 1px solid grey;
   height: 407px;
-  width: 403px;
   background-color: #BCD7A6;
   margin-top: 20px;
   overflow-y: scroll;
+}
+
+h2 {
+  width: 443px;
 }

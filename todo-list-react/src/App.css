@@ -21,5 +21,11 @@ h1 {
 .widget-container {
   display: flex;
   justify-content: center;
-  /* margin: 0 200px; */
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  margin: 0 auto;
 }
